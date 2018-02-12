@@ -18,6 +18,24 @@ class CreateRolesTable extends Migration
             $table->string('name');
             $table->timestamps();
         });
+
+        //create 3 roles records
+        $rows = [
+            [
+                'id'=>1,
+                'name' => 'administrator'
+            ],
+            [
+                'id'=>2,
+                'name' => 'author'
+            ],
+            [
+                'id'=>3,
+                'name' => 'subscriber'
+            ]
+        ];
+        // insert records
+        DB::table('roles')->insert($rows);
     }
 
     /**
@@ -30,3 +48,4 @@ class CreateRolesTable extends Migration
         Schema::dropIfExists('roles');
     }
 }
+

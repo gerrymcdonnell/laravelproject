@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Quick Start Laravel -gmcd
+                    Laravel -project
                 </div>
 
                 <div class="links">
